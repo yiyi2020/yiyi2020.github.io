@@ -18,24 +18,16 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <div id="app">
-    <ol>
-      <li v-for="todo in todos">
-        {{ todo.text }}
-      </li>
-    </ol>
+    {{ message }}
   </div>
 
-  <a href="./page.html">another page</a>
+  <a href="./index.html">return</a>
 
   <script>
     var app = new Vue({
       el: '#app',
       data: {
-        todos: [
-          { text: 'Learn JavaScript' },
-          { text: 'Learn Vue' },
-          { text: 'Build something awesome' },
-        ]
+        message: 'Hello Page!'
       }
     })
   </script>
